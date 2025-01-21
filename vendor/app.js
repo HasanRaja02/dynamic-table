@@ -11,6 +11,7 @@ from.addEventListener("submit", (e) => {
     let strok_in = document.getElementById("stock_in").value;
     let strok_out = document.getElementById("stock_out").value;
     let sales = document.getElementById("sales").value;
+    
 
     let row = document.createElement("tr");
 
@@ -24,7 +25,7 @@ from.addEventListener("submit", (e) => {
     <button class="btn btn-danger btn-sm" onclick="deleteRow(this)">Delete</button>
   </td>
     `;
-
+    count++;
     tableBody.appendChild(row);
     from.reset();
 
