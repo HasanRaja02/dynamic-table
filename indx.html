@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stoke Management System</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Stoke Management System</h1>
+    </header>
+
+    <!-- Main Section for Table -->
+    <section class="table-container">
+      <div class="container">
+        <div class="row">
+            <h2>Product Stock and Sales Table</h2>
+
+          <form id="inputForm" class="row g-3">
+            <div class="col-md-3">
+                <input type="text" id="product_name" class="form-control" placeholder="Enter Product Name" required>
+              </div>
+              <div class="col-md-3">
+                <input type="number" id="stock_in" class="form-control" placeholder="Enter Stock In Number" required>
+              </div>
+              <div class="col-md-3">
+                <input type="number" id="stock_out" class="form-control" placeholder="Enter Stock Out Number" required>
+              </div>
+              <div class="col-md-3">
+                <input type="number" id="sales" class="form-control" placeholder="Enter totul Sales" required>
+              </div>
+              <div class="col-md-4">
+                <button type="submit" class="btn btn-primary w-100">Add to Table</button>
+              </div>
+          </form>
+          <!-- input -->
+          <div class="table-responsive mt-4">
+            <table class="table table-bordered">
+             
+              <thead class="table-dark">
+                <tr>
+                  <th>#</th>
+                  <th>Product Name</th>
+                  <th>Stock In</th>
+                  <th>Stock In</th>
+                  <th>Salse</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="tableBody">
+                <!-- Dynamic Rows Go Here -->
+              </tbody>
+            </table>
+    </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+        
+        <!-- <table>
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <input type="text">
+                    <th>Stock In</th>
+                    <th>Stock Out</th>
+                    <th>Sales</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Product 1</td>
+                    <td>200</td>
+                    <td>50</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>Product 2</td>
+                    <td>300</td>
+                    <td>70</td>
+                    <td>230</td>
+                </tr>
+                <tr>
+                    <td>Product 3</td>
+                    <td>150</td>
+                    <td>30</td>
+                    <td>120</td>
+                </tr>
+                <tr>
+                    <td>Product 4</td>
+                    <td>500</td>
+                    <td>120</td>
+                    <td>380</td>
+                </tr>
+            </tbody>
+       
+        </table> -->
+    
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Stoke Management System</p>
+    </footer>
+    <script src="vendor/bootstrap.min.js"></script>
+    <script src="vendor/app.js"></script>
+</body>
+</html>
